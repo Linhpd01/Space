@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Space-demo</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	</head>
+	<body>
+		<header class="navbar navbar-expand-lg navbar-light bg-white">
+			<div class="container position-relative">
+				<a class="navbar-brand" href="#">
+					<img src="img/logosp.png" alt="Home Page" width="120">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown pe-3 position-static"> 
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">Landings</a>
+							<div class="dropdown-menu menu-board">
+								<div class="row">
+									<div class="col-sm m-3">
+										<h4 class="dropdown-header">classic</h4>
+										<a class="dropdown-item" href="#">Corporate</a>
+										<a class="dropdown-item" href="#">Agency</a>
+										<a class="dropdown-item" href="#">Consulting</a>
+										<a class="dropdown-item" href="#">Service</a>
+										<a class="dropdown-item" href="#">Business</a>
+									</div>
+									<div class="col-sm m-3">
+										<h4 class="dropdown-header">service</h4>
+										<a class="dropdown-item" href="#">Growth</a>
+										<a class="dropdown-item" href="#">Saas</a>
+										<a class="dropdown-item" href="#">Wallet</a>
+										<a class="dropdown-item" href="#">API</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown pe-3 position-static">
+							<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Pages</a>
+							<div class="dropdown-menu menu-board-2">
+								<div class="row">
+									<div class="col-sm m-3">
+										<h4 class="dropdown-header">company</h4>
+										<a class="dropdown-item" href="#">About</a>
+										<a class="dropdown-item" href="#">Sevices</a>
+										<a class="dropdown-item" href="#">Customer Stories</a>
+										<a class="dropdown-item" href="#">Customer Story</a>
+										<a class="dropdown-item" href="#">Help Center</a>
+										<a class="dropdown-item" href="#">Help Center: Categories</a>
+										<a class="dropdown-item" href="#">Help Center: Article</a>
+									</div>
+									<div class="col-sm m-3">
+										<h4 class="dropdown-header invisible">company</h4>
+										<a class="dropdown-item" href="#">Careers</a>
+										<a class="dropdown-item" href="#">Careers: Overview</a>
+										<a class="dropdown-item" href="#">Hire Us</a>
+										<a class="dropdown-item" href="#">Contacts</a>
+										<a class="dropdown-item" href="#">Log In</a>
+										<a class="dropdown-item" href="#">Sign Up</a>
+										<a class="dropdown-item" href="#">Forgot Passwword</a>
+									</div>
+									<div class="col-sm m-3">
+										<h4 class="dropdown-header">portfolio</h4>
+										<a class="dropdown-item" href="#">Modern</a>
+										<a class="dropdown-item" href="#">Classic</a>
+										<a class="dropdown-item" href="#">Case Study</a>
+									</div>
+									<div class="col-sm m-3">
+										<h4 class="dropdown-header">specialty pages</h4>
+										<a class="dropdown-item" href="#">Pricing</a>
+										<a class="dropdown-item" href="#">Coming Soon</a>
+										<a class="dropdown-item" href="#">Coming Soon: Simple</a>
+										<a class="dropdown-item" href="#">Error 404</a>
+										<a class="dropdown-item" href="#">Error 404</a>
+										<a class="dropdown-item" href="#">Term & Conditions</a>
+										<a class="dropdown-item" href="#">Privacy & Policy</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown pe-3">
+							<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Blogs</a>
+							<div class="dropdown-menu p-3">
+								<a class="dropdown-item" href="#">Classic</a>
+								<a class="dropdown-item" href="#">Article</a>
+								<a class="dropdown-item" href="#">Author Profile</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown pe-3 position-static">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Docs</a>
+							<div class="dropdown-menu menu-board-3 p-3">
+								<a class="dropdown-item" href="#">
+									<div class="d-flex text-wrap">
+										<div class="flex-shrink-0 me-2">
+											<img src="img/docs.png" alt="" width="30">
+										</div>
+										<div class="flex-grow-1">
+											<span>Documentation
+												<span class="badge bg-success rounded-pill ms-1">v2.2</span>
+											</span>
+											<p><small>Move quickly with copy-to-clipboard feature</small></p>
+										</div>
+									</div>
+								</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">
+									<div class="d-flex text-wrap">
+										<div class="flex-shrink-0 me-2">
+											<img src="img/qr-code.png" alt="" width="30">
+										</div>
+										<div class="flex-grow-1">
+											<span>Snippets</span>
+											<p><small>Move quickly with copy-to-clipboard feature</small></p>
+										</div>
+									</div></a>
+							</div>
+						</li>
+						<li class="nav-divider"></li>
+						<li class="nav-item pe-3">
+							<button class="btn btn-login shadow-none" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+						</li>
+						<li class="nav-item">
+							<button class="btn btn-success shadow-none" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/user-white.png" alt="user">Sign up</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="modalLogin">
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="btn-close p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body text-center p-5">
+							<h4 class="modal-title" id="exampleModalLabel">Login</h4>
+							<p>Don't have an account yet? <a href="#">Sign up here</a></p>
+							<div class="d-grid gap-3">
+								<a href="#" class="btn btn-outline-secondary py-2" data-bs-dismiss="modal">
+									<img class="me-2" src="img/google-icon.svg" alt="google" width="20">Log in with Google
+								</a>
+								<a href="#" class="btn btn-success py-2">Log in with Email</a>
+							</div>
+						</div>
+						<div class="modal-footer d-block text-center p-4">
+							<span>TRUSTED BY THE WORLD'S BEST TEAMS</span>
+							<div class="row py-3">
+								<div class="col">
+									<img class="img-fluid" src="img/gitlab-gray.svg" alt="gitlab">
+								</div>
+								<div class="col">
+									<img class="img-fluid" src="img/fitbit-gray.svg" alt="fitbit">
+								</div>
+								<div class="col">
+									<img class="img-fluid" src="img/flow-xo-gray.svg" alt="flow-xo">
+								</div>
+								<div class="col">
+									<img class="img-fluid" src="img/layar-gray.svg" alt="layar">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+		<section class="registion position-relative">
+			<div class="container content-space">
+				<div class="shape">
+					<div class="position-absolute top-0 end-0">
+						<img src="img/shape-3-soft-light.svg" alt="">
+					</div>
+					<div class="position-absolute bottom-0 end-0">
+						<img src="img/shape-1-soft-light.svg" alt="" width="300">
+					</div>
+					<div class="position-absolute bottom-0 start-0">
+						<img src="img/shape-2-soft-light.svg" alt="">
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-lg-center">
+					<div class="col-md-8 col-lg-6 mb-5 mb-lg-0 pe-5">
+						<h1 class="display-3 text-light fw-bold">Solving problems for every <span class="text-warning">team</span></h1>
+						<P class="h5 text-light pt-5">Built on standard web technology, teams use Space to build beautiful cross-platform hybrid apps in a fraction of the time.</p>
+						<div class="row pt-4">
+							<div class="col-sm-6">
+								<div class="d-flex">
+									<div class="flex-shrink-1">
+										<img src="img/1111.png" alt="" width="60">
+									</div>
+									<div class="flex-grow ms-4">
+										<p class="h5 text-light">24 hours</p>
+										<p class="text-light">Response time</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="d-flex">
+									<div class="flex-shrink-1">
+										<img src="img/2222.png" alt="" width="60">
+									</div>
+									<div class="flex-grow ms-4">
+										<p class="h5 text-light">92%</p>
+										<p class="text-light">Sastisfaction rate</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 col-lg-6 mb-5 mb-lg-0 ">
+						<div class="card card-lg round-2 p-3">
+							<div class="card-header bg-white pt-2 card-registion">
+								<div class="row align-items-center">
+									<div class="col-sm order-sm-2 mb-sm-0 mb-3">
+										<img src="img/card.png" alt="">
+									</div>
+									<div class="col-sm">
+										<h2>Join Space</h2>
+										<p>Hundreds of companies using Space to build their business.</p>
+									</div>
+								</div>
+							</div>
+							<div class="card-body mb-0">
+								<form action="/action_page.php">
+									<div class="mb-4">
+										<label for="name" class="form-label">Your name:</label>
+										<input type="text" class="form-control" id="name" placeholder="Type your name" name="fullname">
+									</div>
+									<div class="mb-4">
+										<label for="email" class="form-label">Email:</label>
+										<input type="email" class="form-control" id="email" placeholder="example@site.com" name="email">
+									</div>
+									<div class="mb-4">
+										<label class="form-label">Company Size:</label>
+										<div class="row">
+											<div class="col-sm mb-4 mb-sm-0">
+												<label class="form-control">
+													<span class="form-check">
+														<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+														<span class="form-check-label">1-10</span>
+													</span>
+												</label>
+											</div>
+											<div class="col-sm">
+												<label class="form-control">
+													<span class="form-check">
+														<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+														<span class="form-check-label">More than 10</span>
+													</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="d-grid gap-2">
+										<button type="submit" class="btn btn-success text-light p-3 mx-5 shadow-none">Start for free 30-days trial</button>
+									</div>
+								</form>
+							</div>
+							<div class="card-footer bg-white text-center pb-3 card-registion-ft">
+								<span>Need help?</span>
+								<a class="text-decoration-none text-success fw-bold" href="#">Visit our Help Center
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+									  <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="border-top my-5"></div>
+				<div class="row">
+					<div class="col-sm mb-5 mb-sm-0">
+						<div class="d-flex gap-1 rating">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star.svg" alt="half-star" width="20">
+						</div>
+						<blockquote class="blockquote blockquote-sm h5 text-light mb-4">"This is a beautiful template with exciting components."</blockquote>
+						<img src="img/amazon.png" alt="logo" width="100">
+					</div>
+					<div class="col-sm mb-5 mb-sm-0">
+						<div class="d-flex gap-1 rating">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star-half.svg" alt="half-star" width="20">
+						</div>
+						<blockquote class="blockquote blockquote-sm h5 text-light mb-4">"The best template I've ever come across."</blockquote>
+						<img src="img/airbnb.png" alt="logo" width="120">
+					</div>
+					<div class="col-sm mb-5 ">
+						<div class="d-flex gap-1 rating">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star.svg" alt="star" width="20">
+							<img src="img/star-half.svg" alt="half-star" width="20">
+						</div>
+						<blockquote class="blockquote blockquote-sm h5 text-light mb-4">"There one theme is everything that user wants."</blockquote>
+						<img src="img/gg.png" alt="logo" width="150">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="strategies">
+			<div class="container content-space">
+				<div class="text-center mb-5">
+					<h1>Take the best path forward</h1>
+					<p class="h5 fw-normal">Actionable strategies and business marketing advice help you to grow faster.</p>
+				</div>
+				<ul class="nav nav-pills mb-5  justify-content-center" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a href="#" class="nav-link active" id="tab1" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="width:380px;">
+							<div class="d-flex">
+								<div class="flex-shrink">
+									<img src="img/icon9.png" alt="" width="50">
+								</div>
+								<div class="flex-grow">
+									<p class="h5 text-dark">All-in-one workspace</p>
+									<p class="text-dark">Create a business, whether you’ve got a fresh idea.</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a href="#" class="nav-link" id="tab2" data-bs-toggle="pill" data-bs-target="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" style="width:380px;">
+							<div class="d-flex">
+								<div class="flex-shrink">
+									<img src="img/icon10.png" alt="" width="50">
+								</div>
+								<div class="flex-grow">
+									<p class="h5 text-dark">Automation on a whole new level</p>
+									<p class="text-dark">Use automation to scale campaigns profitably and save time doing it.</p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a href="#" class="nav-link" id="tab3" data-bs-toggle="pill" data-bs-target="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" style="width:380px;">
+							<div class="d-flex">
+								<div class="flex-shrink">
+									<img src="img/icon11.png" alt="" width="50">
+								</div>
+								<div class="flex-grow">
+									<p class="h5 text-dark">Solving problems for every team</p>
+									<p class="text-dark">One tool for your company to share knowledge and ship projects</p>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active text-center" id="pills-home" role="tabpanel" aria-labelledby="tab1">
+						<div class="device position-relative">
+							<div class="PC">
+								<img  src="img/img8.jpg" alt="" >
+							</div>
+							<div class="mobile position-absolute">
+								<img class="d-none d-lg-block" src="img/img3.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade text-center" id="pills-profile" role="tabpanel" aria-labelledby="tab2">
+						<div class="device position-relative">
+							<div class="PC">
+								<img src="img/img6.jpg" alt="" >
+							</div>
+							<div class="mobile position-absolute">
+								<img class="d-none d-lg-block" src="img/img4.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade text-center" id="pills-contact" role="tabpanel" aria-labelledby="tab3">
+						<div class="device position-relative">
+							<div class="PC">
+								<img src="img/img1.jpg" alt="" >
+							</div>
+							<div class="mobile position-absolute">
+								<img class="d-none d-lg-block" src="img/img2.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="service position-relative">
+			<div class="container">
+				<div class="row justify-content-end align-items-md-center">
+					<div class="Wkc position-absolute top-0 start-0 d-none col-md-6 bg-img-center d-md-block h-100"></div>
+					<div class="d-md-none mb-5 mb-md-0">
+						<img src="img/work-company.jpg" alt="imagebg" style="width:100%;">
+					</div>
+					<div class="col-md-6 p-4">
+						<p>CREATE A WEBSITE</p>
+						<h3>Less overhead, more collaboration</h3>
+						<p>Start with award-winning templates, then customize to fit your style and professional needs.</p>
+						<div class="row">
+							<div class="col-sm-6 col-md-12 col-lg-6">
+								<ul class="list-unstyled">
+									<li><span class="fa fa-check text-success pe-2"></span>Corporate-based Business</li>
+									<li><span class="fa fa-check text-success pe-2"></span>Creative Services</li>
+									<li><span class="fa fa-check text-success pe-2"></span>New Business Innovation</li>
+									<li><span class="fa fa-check text-success pe-2"></span>Online E-commerce</li>
+									<li><span class="fa fa-check text-success pe-2"></span>Real Estate</li>
+								</ul>
+							</div>
+							<div class="col-sm-6 col-md-12 col-lg-6">
+								<ul class="list-unstyled">
+									<li><span class="fa fa-check text-success pe-2"></span>Portfolio</li>
+									<li><span class="fa fa-check text-success pe-2"></span>Blogs</li>
+									<li><span class="fa fa-check text-success pe-2"></span>Booking.com</li>
+									<li><span class="fa fa-check text-success pe-2"></span>and more...</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="text-decoration-none text-success fw-bold">Explore all templates
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+							  <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="templates">
+			<div class="container content-space">
+				<div class="row">
+					<div class="col-sm-6 col-lg-4  mb-5">
+						<img src="img/icon1.png" alt="" width="100">
+						<h5>Task Management</h5>
+						<p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+					</div>
+					<div class="col-sm-6 col-lg-4 mb-5">
+						<img src="img/icon2.png" alt="" width="100">
+						<h5>Activity Reporting</h5>
+						<p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+					</div>
+					<div class="col-sm-6 col-lg-4  mb-5">
+						<img src="img/icon3.png" alt="" width="100">
+						<h5>Smart Dashboards</h5>
+						<p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+					</div>
+					<div class="col-sm-6 col-lg-4  mb-5">
+						<img src="img/icon4.png" alt="" width="100">
+						<h5>SSO Authentication</h5>
+						<p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+					</div>
+					<div class="col-sm-6 col-lg-4  mb-5">
+						<img src="img/icon5.png" alt="" width="100">
+						<h5>Competitive Analysis</h5>
+						<p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+					</div>
+					<div class="col-sm-6 col-lg-4  mb-5">
+						<img src="img/icon6.png" alt="" width="100">
+						<h5>API Access</h5>
+						<p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="potential">
+			<div class="container content-space">
+				<div class="text-center mb-5">
+					<h1>Unlock Space’s full potential</h1>
+					<p>Modernize all the ways you work.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<img src="img/oc-error.svg" alt="" style="width:50%;">
+					</div>
+					<div class="col-md-6">
+						<table class="table">
+							<thead>
+								<tr>
+								  <th scope="col"></th>
+								  <th scope="col" class="text-end">Others</th>
+								  <th scope="col" class="text-end">Space</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" class="fw-normal">Storage</th>
+									<td class="text-end"><span class="text-success fa fa-check"></span></td>
+									<td class="text-end"><span class="text-success fa fa-check"></span></td>
+								</tr>
+								<tr>
+									<th scope="row" class="fw-normal">Custom Fields</th>
+									<td class="text-end"><span class="text-muted  fa fa-close"></span></td>
+									<td class="text-end"><span class="text-success fa fa-check"></span></td>
+								</tr>
+								<tr>
+									<th scope="row" class="fw-normal">Task Management</th>
+									<td class="text-end"><span class="text-muted fa fa-close"></span></td>
+									<td class="text-end"><span class="text-success fa fa-check"></span></td>
+								</tr>
+								<tr>
+									<th scope="row" class="fw-normal">Activity Reporting </th>
+									<td class="text-end"><span class="text-success fa fa-check"></span></td>
+									<td class="text-end"><span class="text-success fa fa-check"></span></td>
+								</tr>
+								<tr>
+									<th scope="row" class="fw-normal">Two-Factor Authentication</th>
+									<td class="text-end"><span class="text-success fa fa-check"></span></td>
+									<td class="text-end"><span class="text-success fa fa-check"></span></td>
+								</tr>
+								<tr>
+									<th scope="row" class="fw-normal">API Access</th>
+									<td class="text-end"><span class="text-muted fa fa-close"></span></td>
+									<td class="text-end"><span class="text-success fa fa-check"></span></td>
+								</tr>
+								<tr>
+									<th scope="row" class="fw-normal">Implementation Support</th>
+									<td class="text-end"><span class="text-muted fa fa-close"></span></td>
+									<td class="text-end"><span class="text-success fa fa-check"></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row mx-auto text-center pt-5" style="width:75%;">
+					<div class="col-sm-4 divider-1">
+						<h1>45k+</h1>
+						<p>clients from freelancers to corporate companies</p>
+					</div>
+					<div class="col-sm-4 divider-1">
+						<h1>8...</h1>
+						<p>years of experience in this business already</p>
+					</div>
+					<div class="col-sm-4 ">
+						<h1>12k+</h1>
+						<p>resolved all kinds of questions and inquiries</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container content-space">
+				<div class="text-center my-5">
+					<h1>All about Space</h1>
+					<p>Explore all Space guides and resources.</p>
+				</div>
+				<div class="row mb-5">
+					<div class="col-sm-6 col-lg-4 mb-3">
+						<a class="card card-lg card-link text-light text-decoration-none" href="#" style="min-height:400px;">
+							<div class="card-body px-4">
+								<span class="badge">Data insight</span>
+								<h3>State of product analytics report</h3>
+								<p>Learn more
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+										<path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+									</svg>
+								</p>
+							</div>
+							<div class="position-absolute bottom-0 start-0 end-0">
+								<img src="img/shape-4-soft-light.svg" alt="" style="width:100%;">
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-6 col-lg-4 mb-3">
+						<a class="card card-lg card-link text-light text-decoration-none" href="#" style="min-height:400px;">
+							<div class="card-body px-4">
+								<span class="badge">Ebook reports</span>
+								<h3>Space 2020 system architecture</h3>
+								<p>Learn more
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+										<path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+									</svg>
+								</p>
+							</div>
+							<div class="position-absolute bottom-0 start-0 end-0">
+								<img src="img/shape-5-soft-light.svg" alt="" style="width:100%;">
+							</div>
+						</a>
+					</div>
+					<div class="col-sm-6 col-lg-4 mb-3">
+						<a class="card card-lg card-link text-light text-decoration-none" href="#" style="min-height:400px;">
+							<div class="card-body px-4">
+								<span class="badge">Ebook reports</span>
+								<h3>A guide to Space product materials</h3>
+								<p>Learn more
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+										<path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+									</svg>
+								</p>
+							</div>
+							<div class="position-absolute bottom-0 start-0 end-0">
+								<img src="img/shape-6-soft-light.svg" alt="" style="width:100%;">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="text-center pb-5">
+					<p class="mb-0">Want to read more?</p>
+					<a href="#" class="h5 text-success text-decoration-none">Explore all Space resources 
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</section>
+		<div class="border-bottom mx-auto" style="width:400px;"></div>
+		<section class="questions">
+			<div class="container content-space-1">
+				<div class="text-center mb-5">
+					<h1>Frequently Asked Questions</h1>
+				</div>
+				<div class="card card-lg mx-md-auto card-questions">
+					<div class="card-body">
+						<div class="accordion accordion-flush" id="accordionFlushExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingOne">
+								  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+									What methods of payments are supported?
+								  </button>
+								</h2>
+								<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+								  <div class="accordion-body">You can purchase the themes on Bootstrap Themes via any major credit/debit card (via Stripe) or with your Paypal account. We don't support cryptocurrencies or invoicing at this time.</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingTwo">
+								  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+									Can I cancel at anytime?
+								  </button>
+								</h2>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+								  <div class="accordion-body">If you'd like a refund please reach out to us at <a href="#">themes@getbootstrap.com</a>. If you need technical help with the theme before a refund please reach out to the seller first and they can get in touch with us if they're unable to resolve the issue.</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingThree">
+								  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+									How do I get a receipt for my purchase?
+								  </button>
+								</h2>
+								<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+								  <div class="accordion-body">You'll receive an email from Bootstrap themes once your purchase is complete.</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingFour">
+								  <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+									Which license do I need?
+								  </button>
+								</h2>
+								<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">There are three license types - <a href="#">Standard, Multisite</a>, and <a href="#">Extended</a>. We've provided the table below for a quick look at the difference between the them, as well as a few examples of ways each license could be used. If you'd like more of the nitty-gritty details you can find them below and always feel free to reach out with any questions you have at <a href="#">themes@getbootstrap.com</a>.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer text-center p-3">
+						<p class="mb-0">Still have questions?</p>
+						<a class="text-decoration-none text-success" href="#">Contact our friendly support team
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+							  <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="position-relative">
+				<div class="shape position-absolute bottom-0">
+					<svg  xmlns="http://www.w3.org/2000/svg" width="3000" height="400" viewBox="0 0 3000 400">
+					  <defs>
+						<style>
+						  .cls-1 {	
+							fill: #005c45;
+							fill-rule: evenodd;
+						  }
+						</style>
+					  </defs>
+					  <g id="Artboard_1" data-name="Artboard 1">
+						<path class="cls-1" d="M3000,0V400H0Z"/>
+					  </g>
+					</svg>
+				</div>
+			</div>
+		</section>
+		<section class="companies">
+			<div class="container content-space">
+				<h4 class="fw-bold text-light text-center mb-4">Thousands of world’s leading companies trust Space</h4>
+				<div class="row">
+					<div class="col py-3">
+						<img src="img/vidados-white.svg" alt="vidados" width="120">
+					</div>
+					<div class="col py-3">
+						<img src="img/fitbit-white.svg" alt="fitbit" width="120">
+					</div>
+					<div class="col py-3">
+						<img src="img/forbes-white.svg" alt="forbes" width="120">
+					</div>
+					<div class="col py-3">
+						<img src="img/mailchimp-white.svg" alt="mailchimp" width="120">
+					</div>
+					<div class="col py-3">
+						<img src="img/layar-white.svg" alt="layar" width="120">
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="border-top">
+				<div class="container">
+					<div class="row py-5">
+						<div class="col-lg mb-5 mb-lg-0">
+							<div class="logo">
+								 <a class="navbar-brand" href="#"><img src="img/logosp2.png" alt=""></a>
+							</div>
+							<p class="text-light">Choose language</p>
+							<div class="btn-group btn-choose " role="group">
+								<button id="btnGroupDrop1" type="button" class="btn btn-flag dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false"><img class="rounded-circle me-2" src="img/us.svg" alt="" width="15"> English(US)</button>
+								<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+								  <li><a class="dropdown-item d-flex" href="#"><img class="rounded-circle me-2" src="img/us.svg" alt="US" width="15">Enlish (US)</a></li>
+								  <li><a class="dropdown-item d-flex" href="#"><img class="rounded-circle me-2" src="img/UK.svg" alt="UK" width="15">English (UK)</a></li>
+								  <li><a class="dropdown-item d-flex" href="#"><img class="rounded-circle me-2" src="img/duc.svg" alt="De" width="15">Deutsch</a></li>
+								  <li><a class="dropdown-item d-flex" href="#"><img class="rounded-circle me-2" src="img/danmach.svg" alt="Dan" width="15">Dansk</a></li>
+								  <li><a class="dropdown-item d-flex" href="#"><img class="rounded-circle me-2" src="img/Taybannha.svg" alt="Es" width="15">Espanol</a></li>
+								  <li><a class="dropdown-item d-flex" href="#"><img class="rounded-circle me-2" src="img/halan.svg" alt="Ner" width="15">Nerderlands</a></li>
+								  <li><a class="dropdown-item d-flex" href="#"><img class="rounded-circle me-2" src="img/italia.svg" alt="It" width="15">Italiano</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm">
+							<p class="fw-bold text-success">RESOURCES</p>
+							<ul class="list list-unstyled py-1">
+								<li><a class="link-light text-decoration-none" href="#">Blog</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Guidance</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Customer Stories</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Support
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+								  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+								  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+								</svg>
+								</a></li>
+								<li><a class="link-light text-decoration-none" href="#">API</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Packages</a></li>
+							</ul>
+						</div>
+						<div class="col-sm">
+							<p class="fw-bold text-success">COMPANY</p>
+							<ul class="list list-unstyled py-1">
+								<li><a class="link-light text-decoration-none" href="#">Belonging
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+								  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+								  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+								</svg>
+								</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Company</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Careers<span class="badge bg-warning text-dark rounded-pill ms-2">We're hiring</span></a></li>
+								<li><a class="link-light text-decoration-none" href="#">Contacts</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Security</a></li>
+							</ul>
+						</div>
+						<div class="col-sm">
+							<p class="fw-bold text-success">PLATFORM</p>
+							<ul class="list list-unstyled py-1">
+								<li><a class="link-light text-decoration-none" href="#">Web</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Mobile</a></li>
+								<li><a class="link-light text-decoration-none" href="#">iOS</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Android</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Figma Importing</a></li>
+							</ul>
+						</div>
+						<div class="col-sm">
+							<p class="fw-bold text-success">LEGAL</p>
+							<ul class="list list-unstyled py-1">
+								<li><a class="link-light text-decoration-none" href="#">Terms of use</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Privacy policy</a></li>
+							</ul>
+							<p class="fw-bold text-success">DOCS</p>
+							<ul class="list list-unstyled py-1">
+								<li><a class="link-light text-decoration-none" href="#">Documentation</a></li>
+								<li><a class="link-light text-decoration-none" href="#">Snippets</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="border-top"></div>
+					<div class="row align-items-md-center py-5">
+						<div class="col-md">
+							<p class="text-light">© Space. 2021 Htmlstream. All rights reserved.</p>
+						</div>
+						<div class="col-md">
+							<div class="d-flex gap-3 justify-content-md-end">
+								<a href="#" class="btn btn-icon text-light shadow-none"><span class="fa fa-facebook"></span></a>
+								<a href="#" class="btn btn-icon text-light shadow-none"><span class="fa fa-twitter"></span></a>
+								<a href="#" class="btn btn-icon text-light shadow-none"><span class="fa fa-github"></span></a>
+								<a href="#" class="btn btn-icon text-light shadow-none"><span class="fa fa-slack"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</body>
+</html>
