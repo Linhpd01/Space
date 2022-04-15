@@ -76,7 +76,8 @@
 	background-position: center center;
 }
 .PC img{
-	box-shadow: 0 5px 5px 8px rgba(0, 0, 0, 0.1)
+	box-shadow: 0 5px 5px 8px rgba(0, 0, 0, 0.1);
+	max-width:100%
 }
 .mobile{
 	top: 12%;
